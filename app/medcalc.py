@@ -1,17 +1,5 @@
-from flask import Flask
-from flask_restful import Api, Resource, reqparse
+from flask_restful import Resource, reqparse
 from werkzeug.exceptions import BadRequest
-
-
-def create_app():
-    app = Flask(__name__)
-    init_app(app)
-    return app
-
-
-def init_app(app):
-    api = Api(app)
-    api.add_resource(MEDCalc, "/calc")
 
 
 med_multiplier = {
@@ -72,8 +60,3 @@ class MEDCalc(Resource):
                 raise BadRequest(f"Unexpected med {med}")
 
         return result, 200
-
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
