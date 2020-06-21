@@ -18,7 +18,7 @@ Meds are:
 			hydrocodone
 			hydromorphone
 			morphine
-      methadone (dose-dependent potency)
+			methadone (dose-dependent potency)
 			oxycodone
 			oxymorphone
 			tapentodol
